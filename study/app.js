@@ -97,3 +97,76 @@ if (t === true) { // 해당 변수가 true라면, truthy에 속하는 출력값�
   console.log('오류입니다.')
 }
 //! 15-----------------------
+
+let number = 1;
+let String = "string";
+let isTrue = true;
+let array = [
+  'one', 'two', 'three'
+];
+let obj = {
+  key: value,
+}
+
+
+console.log(typeof number) // 숫자 타입
+console.log(typeof String) // 문자열 타입
+console.log(typeof isTrue) // boolean타입
+console.log(typeof array) // 배열이나 타입 검사 시 객체에 속하여 객체 타입으로 반환
+console.log(typeof obj) // 객체 타입
+//! 16-----------------------
+
+let aa = 0;
+let bb = false
+if (aa == false) { // 0 => false라는 값을 가지고 있다. 그러기에 동등 연산자를 사용 시 형변환을 통하여 참의 값을 준다.
+  console.log("맞다.")
+} else {
+  console.log('아니다')
+}
+
+if (aa === false) { // 일치연산자를 사용함으로서 aa => 0의 값만을 가진다. false를 나타내지는 않았으니 '아니다'란 결과가 나온다. 
+  console.log('맞다')
+} else {
+  console.log('아니다')
+}
+//! 17-----------------------
+
+let X = 10;
+
+if (typeof x !== 'undefined' && x === 10) { // 변수선언을 별도로 해주지 않았기에 undefined를 조건으로 넣은 것이다. 
+  console.log('x는 10이다.');
+} else {
+  console.log('x는 10이 아니다.');
+}
+
+//! 18-----------------------
+
+let six = 6;
+let seven = 7;
+
+let sum = six + seven
+console.log(sum) // 13
+
+let diff = six - seven
+console.log(diff) //-1
+
+let prod = six * seven
+console.log(prod) //42
+
+let quot = six / seven
+console.log(quot) //0.8571428571428571
+
+let rema = six % seven
+console.log(rema) //6
+//! 19-----------------------
+
+function quotient(ten, three) {
+  ten = 10;
+  three = 3;
+  return ten % three
+}
+console.log(quotient())
+
+let result = 10 % 3;
+console.log(result);
+//! 20-----------------------
