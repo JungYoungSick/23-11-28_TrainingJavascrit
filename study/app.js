@@ -131,13 +131,13 @@ if (aa === false) { // 일치연산자를 사용함으로서 aa => 0의 값만�
 }
 //! 17-----------------------
 
-let X = 10;
-
-if (typeof x !== 'undefined' && x === 10) { // 변수선언을 별도로 해주지 않았기에 undefined를 조건으로 넣은 것이다. 
-  console.log('x는 10이다.');
-} else {
-  console.log('x는 10이 아니다.');
-}
+// let X = 10;
+// let x = ;
+// if (typeof x !== 'undefined' && x === 10) { // 변수선언을 별도로 해주지 않았기에 undefined를 조건으로 넣은 것이다. 
+//   console.log('x는 10이다.');
+// } else {
+//   console.log('x는 10이 아니다.');
+// }
 
 //! 18-----------------------
 
@@ -170,3 +170,52 @@ console.log(quotient())
 let result = 10 % 3;
 console.log(result);
 //! 20-----------------------
+let x = 5;
+let y = 7;
+if (x > y) {
+  console.log('x가 y보다 크다')
+} else {
+  console.log('x가 y보다 작다')
+}
+//! 21-----------------------
+let z = 2
+if (x === y && z === 0) {
+  console.log('x와 y는 같고 z는 0이다.')
+} else if (x !== y) {
+  console.log('x와 y는 다르다.')
+} else if (z !== 0) {
+  console.log('x와 y는 같고, z는 0이 아닙니다. ')
+} else {
+  console.log('그외의 다른 값들이다.')
+}
+//! 22-----------------------
+
+function divide(x, y) {
+  x = 5;
+  y = 10;
+  return x % y
+}
+console.log(divide()) // 함수로 작성 시에 5라는 값을 반환한다.
+
+let q = 5
+let w = 10
+quotient = Math.floor(q / w)
+console.log(quotient)
+//변수를 선언 후 Math.floor[소수점 이하를 버리고 정수 부분만 남기기 위해 사용되는 함수]사용 시 0.5가 나오지만 소수점은 버리기에 몫은 0이 나온다.
+//! 23-----------------------
+//위 값을 그대로 사용.
+let temp = q;
+q = w;
+w = temp;
+
+console.log(q)
+console.log(w)
+
+//! 24-----------------------
+
+let i = 1;
+while (i <= 10) {
+  console.log(i)
+  i++
+}
+//! 25-----------------------
