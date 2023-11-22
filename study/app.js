@@ -219,3 +219,65 @@ while (i <= 10) {
   i++
 }
 //! 25-----------------------
+
+let data = "coconut";
+switch (data) {
+  case "apple":
+    console.log("사과를 고릅니다.")
+    break;
+  case "basasa":
+    console.log("바나나를 고릅니다.")
+    break;
+  case "Lemon":
+    console.log("레몬을 고릅니다.")
+    break;
+  case "coconut":
+    console.log("코코넛을 고릅니다.")
+    break;
+  default:
+    console.log("과일을 고르지 않습니다.")
+}
+//! 26-----------------------
+
+const fs = require('fs');
+
+// try {
+//   const data = fs.readFileSync('nonexistent-file.txt', 'utf8'); //파일을 읽는다.
+//   console.log(data) //읽고 나서 데이터를 불러온다
+// } catch (error) {
+//   console.error("An error occurred:", error.message); //파일을 읽지 못하는 오류가 발생 시 오류 메세지를 표시한다.
+// }
+//! 27-----------------------
+let j = 1;
+while (j <= 5) {
+  if (j % 2 === 0) {
+    j++
+    continue;
+  }
+  console.log(j)
+  break
+}
+//! 28-----------------------
+
+while (j <= 10) {
+  if (j === 9) {
+    break;
+  }
+  console.log(j)
+  j++
+}
+for (j = 1; j <= 10; j++) {
+  if (j === 7) {
+    break;
+  }
+  console.log(j)
+}
+//! 29-----------------------
+
+const bin1 = {};
+const bin2 = [];
+let bin3 = {};
+let bin4 = [];
+var bin5 = {};
+var bin6 = [];
+//! 30-----------------------
