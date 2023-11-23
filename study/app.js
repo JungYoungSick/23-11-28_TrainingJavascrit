@@ -281,3 +281,33 @@ let bin4 = [];
 var bin5 = {};
 var bin6 = [];
 //! 30-----------------------
+
+let info = {
+  address: "대덕대로",
+  number: 182,
+}
+//! 31-----------------------
+// 점 표기법(기본표기법)
+console.log(info.address)
+console.log(info.number)
+// 대괄호표기법(동적인 표현에 좋음)
+console.log(info['address'])
+console.log(info['number'])
+//! 32-----------------------
+
+info.name = "jung"
+console.log(info.name)
+info['age'] = 30
+console.log(info['age'])
+console.log(info)
+//! 33-----------------------
+
+delete info.age;
+console.log(info)
+//! 34-----------------------
+
+for (let key in info) {
+  console.log(key + ":" + info[key]);
+}
+// 속성을 잘 소유하고 있는지 검사하는 메서드[hasOwnProperty]
+//! 35-----------------------
