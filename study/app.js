@@ -311,3 +311,30 @@ for (let key in info) {
 }
 // 속성을 잘 소유하고 있는지 검사하는 메서드[hasOwnProperty]
 //! 35-----------------------
+
+
+//좀더 연구를 해 봐야겠다.
+//! 36-----------------------
+
+let binArray = [];
+console.log(binArray)
+//! 37-----------------------
+
+let binArray2 = [1, 2, 3, 4, 5];
+console.log(binArray2)
+//! 38-----------------------
+
+binArray2.push(6, 7)
+console.log(binArray2)
+//! 39-----------------------
+
+let ArrayDelite = binArray2.indexOf(3)
+if (ArrayDelite !== -1) {
+  binArray2.splice(ArrayDelite, 1)
+}
+console.log(binArray2)
+
+binArray2 = binArray2.filter(D => D !== 5);
+
+console.log(binArray2)
+//! 40-----------------------
