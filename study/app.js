@@ -338,3 +338,32 @@ binArray2 = binArray2.filter(D => D !== 5);
 
 console.log(binArray2)
 //! 40-----------------------
+
+let ArrayLength = binArray2.length;
+console.log(ArrayLength)
+//! 41-----------------------
+let binArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for (a = 0; a < binArray3.length; a++) {
+  console.log(binArray3[a])
+}
+//! 42-----------------------
+
+RandumIndex = binArray3.indexOf(5); //찾을 값은 5였다.
+console.log(RandumIndex) //결과 값은 4가 나옴
+//이유는 index는 기본적으로 0부터 세기 때문이다.
+//! 43-----------------------
+
+function plus() {
+  let a = 1;
+  let b = 3;
+  return a + b
+}
+console.log(plus())
+//! 44-----------------------
+
+/** 함수 표현식과 함수 선언식의 두가지 차이를 비교하자면
+ * 함수 표현식은 함수를 변수에 담아 필요에 따라 불러 사용하는 모듈같은 것이다.
+ * 함수 선언식은 함수명을 지정하여 필요에 따라 함수를 선언하는 방식이다.
+ * 두가지 다 이름을 지정해주긴 하나 차이는 호출에 따라 값이 달라지기도 하며 여러 차이점이 있다.
+ */
+//! 45-----------------------
