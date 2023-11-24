@@ -367,3 +367,36 @@ console.log(plus())
  * 두가지 다 이름을 지정해주긴 하나 차이는 호출에 따라 값이 달라지기도 하며 여러 차이점이 있다.
  */
 //! 45-----------------------
+
+const and = (a, b) => a * b;
+
+let end = and(3, 4);
+console.log(end)
+//! 46-----------------------
+
+//아직 완료하지 못함. 다시 이해하기.
+//! 47-----------------------
+
+function onedata(one) {
+  function twodata(two) {
+    return one + two
+  } return twodata;
+}
+let threeday = onedata(25); //반환 시 let threeday = twodata 가 된다;
+console.log(threeday(15)); //콘솔이 없을 시엔 값 자체를 출력하지 않는다.
+
+//! 48-----------------------
+
+function abc(a = 2, b = 4, c = 6) {
+  console.log(a, b, c);
+}
+
+abc(); // 값 호출
+abc(4, 3, 4); // 값 변경
+abc(undefined, 2, undefined) // undefined를 사용하여 중간 값만 변경
+//! 49-----------------------
+
+class newClass {
+
+}
+//! 50-----------------------
